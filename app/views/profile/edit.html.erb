@@ -1,0 +1,39 @@
+<h2>Edit <%=@user.fname%>'s Profile</h2>
+
+<div id="form">
+	<%= form_for @profile do |f| %>
+		<%= f.label :gender, "Gender:" %>
+		<br>
+		<%= f.text_field :gender %>
+		<br>
+		<%= f.label :birthday, "Birthday:" %>
+		<br>
+		<%= f.text_field :birthday %>
+		<br>
+		<%= f.label :religion, "Religion:" %>
+		<br>
+		<%= f.text_field :religion %>
+		<br>
+		<%= f.label :current, "Current City:" %>
+		<br>
+		<%= f.text_field :current %>
+		<br>
+		<%= f.label :hometown, "Hometown:" %>
+		<br>
+		<%= f.text_field :hometown %>
+		<br>
+		<%= f.label :education, "Education:" %>
+		<br>
+		<%= f.text_field :education %>
+		<br>
+		<%= f.label :employment, "Employment:" %>
+		<br>
+		<%= f.text_field :employment %>
+		<br>
+		<%= f.label :website, "Website:" %>
+		<br>
+		<%= f.text_field :website %>
+		<br>
+		<%= f.submit "Update", :class => "submit" %>
+	<% end %>
+</div>

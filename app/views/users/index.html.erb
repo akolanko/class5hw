@@ -1,0 +1,12 @@
+<h2>All Users</h2>
+
+<% @users.each do |user| %>
+	<%= link_to user.fname + " " + user.lname, user_path(user.id) %>
+	<%= link_to "[Delete]", user_path(user.id), method: :delete, confirm: "Are you sure you want to delete #{user.fname}?" %>
+	<%= link_to "[Edit]", edit_user_path(user.id) %>
+	<br><br>
+<% end %>
+<br>
+<%= link_to "[New User]", new_user_path %>
+<br>
+<%= link_to "[Search for User]", "/search" %>

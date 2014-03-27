@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Class5hw</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				Application
+			</h1>
+		</div>
+		<div id="container">
+			<div id="colone">
+				<div id="navbar">
+					<ul id="nav">
+						<li>
+							<a href="/">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="/users">
+								Users
+							</a>
+						</li>
+						<li>
+							Me
+						</li>
+						<li>
+							Logout
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="coltwo">
+				<% if flash[:notice] %>
+					<%= flash[:notice] %>
+				<% end %>
+				<%if flash[:alert] %>
+					<%= flash[:alert] %>
+				<% end %>
+
+				<%= yield %>
+			</div>
+		</div>
+	</body>
+</html>

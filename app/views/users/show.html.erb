@@ -1,0 +1,5 @@
+<h2><%= @user.fname %>'s Page</h2>
+
+<%= link_to "[" + @user.fname + "'s Profile]", user_profile_index_path(@user.id) %>
+<br>
+<%= link_to "[" + @user.fname + "'s Posts]", user_posts_path(@user.id) %>

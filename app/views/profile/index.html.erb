@@ -1,0 +1,84 @@
+<h2><%= @user.fname %>'s Profile</h2>
+
+<div id="profilecolone">
+	<% if @profile %>
+		<% if @profile.gender %>
+			<b>Gender:</b>
+			<br>
+		<% end %>
+		<% if @profile.birthday %>
+			<b>Birthday:</b>
+			<br>
+		<% end %>
+		<% if @profile.religion %>
+			<b>Religion:</b>
+			<br>
+		<% end %>
+		<% if @profile.current %>
+			<b>Current City:</b>
+			<br>
+		<% end %>
+		<% if @profile.hometown %>
+			<b>Hometown:</b>
+			<br>
+		<% end %>
+		<% if @profile.education %>
+			<b>Education:</b>
+			<br>
+		<% end %>
+		<% if @profile.employment %>
+			<b>Employment:</b>
+			<br>
+		<% end %>
+		<% if @profile.website %>
+			<b>Website:</b>
+			<br>
+		<% end %>
+	<% end %>
+</div>
+<div id="profilecoltwo">
+	<% if @profile %>
+		<% if @profile.gender %>
+			<%= @profile.gender %>
+			<br>
+		<% end %>
+		<% if @profile.birthday %>
+			<%= @profile.birthday %>
+			<br>
+		<% end %>
+		<% if @profile.religion %>
+			<%= @profile.religion %>
+			<br>
+		<% end %>
+		<% if @profile.current %>
+			<%= @profile.current %>
+			<br>
+		<% end %>
+		<% if @profile.hometown %>
+			<%= @profile.hometown %>
+			<br>
+		<% end %>
+		<% if @profile.education %>
+			<%= @profile.education %>
+			<br>
+		<% end %>
+		<% if @profile.employment %>
+			<%= @profile.employment %>
+			<br>
+		<% end %>
+		<% if @profile.website %>
+			<%= @profile.website %>
+			<br>
+		<% end %>
+	<% end %>
+</div>
+<br>
+<div class="clear">
+</div>
+<% if @profile %>
+<br>
+<br>
+	<%= link_to "[Edit Profile]",  edit_user_profile_path(@user.id, @profile.id) %>
+<br><br>
+<% end %>
+<%= link_to "[Back to " + @user.fname + "'s Page]", user_path(@user.id) %>

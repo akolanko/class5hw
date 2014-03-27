@@ -1,0 +1,167 @@
+/*ALL PAGES #f5fff1*/
+
+body{
+	font-family: "Gerogia", serif;
+	text-transform: lowercase;
+	font-size: 14px;
+	letter-spacing: .2em;
+	color: #c8dddb;
+}
+
+#header{
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	color: #b6cac8;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+#colone{
+	width: 200px;
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#coltwo{
+	width: 600px;
+	margin: 0;
+	padding: 30px 50px 0 50px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+	height: 1px;
+}
+
+#navbar{
+	width: 200px;
+	position: fixed;
+	color: #b6cac8;
+	margin: 0;
+	padding: 0;
+}
+
+ul#nav{
+	list-style: none;
+	font-size: 1.2em;
+}
+
+ul#nav li{
+	padding: 10px 0;
+}
+
+a:link{
+	text-decoration: none;
+	color: #b6cac8;
+}
+
+a:visited{
+	color: #b6cac8;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #c8dddb;
+}
+
+h1{
+	font-size: 2em;
+	margin: 0;
+	padding: 10px;
+}
+
+h2{
+	font-size: 1.8em;
+}
+
+h3{
+	font-size: 1.5em;
+	margin: 25px 0;
+	padding: 0;
+}
+
+h4{
+	font-size: 1.2em;
+	margin: 15px 0;
+	padding: 0;
+}
+
+.postbody{
+	padding: 20px;
+	color: #a9a9a9;
+}
+
+.posttime{
+	padding: 20px;
+	font-size: .9em;
+}
+
+#form{
+	line-height: 170%;
+}
+
+
+/*PROFILE PAGE*/
+
+
+#profilecolone{
+	width: 150px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+}
+
+#profilecoltwo{
+	width: 450px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+	color: #a9a9a9;
+}
+
+
+/*SIGN UP */
+
+.submit{
+	border-radius: 10%;
+	font-family: inherit;
+	text-transform: lowercase;
+	background-color: #b6cac8;
+	color: #ffffff;
+	font-size: 1.1em;
+	letter-spacing: .2em;
+	border: 1px solid #a9a9a9;
+	margin: 10px 0;
+}
+
+input.submit:hover{
+	cursor: pointer;
+	color: #c8dddb;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */

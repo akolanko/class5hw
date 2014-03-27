@@ -1,0 +1,24 @@
+<h2>Sign Up</h2>
+
+<div id="form">
+
+	<%= form_for @user do |f| %>
+		<%= f.label :fname, "First Name:" %>
+		<br>
+		<%= f.text_field :fname %>
+		<br>
+		<%= f.label :lname, "Last Name:" %>
+		<br>
+		<%= f.text_field :lname %>
+		<br>
+		<%= f.label :email, "Email:" %>
+		<br>
+		<%= f.text_field :email %>
+		<br>
+		<%= f.label :password, "Password:" %>
+		<br>
+		<%= f.password_field :password %>
+		<br>
+		<%= f.submit "sign up", :class => "submit" %>
+	<% end %>
+</div>
