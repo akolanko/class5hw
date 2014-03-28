@@ -1,7 +1,7 @@
-<h2>Edit <%=@user.fname%>'s Profile</h2>
+<h2>Edit <%=@profile.user.fname%>'s Profile</h2>
 
 <div id="form">
-	<%= form_for @profile do |f| %>
+	<%= form_for [@profile.user, @profile] do |f| %>
 		<%= f.label :gender, "Gender:" %>
 		<br>
 		<%= f.text_field :gender %>

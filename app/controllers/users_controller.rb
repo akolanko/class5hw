@@ -25,6 +25,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(params[:user])
 		if @user.save
+			Profile.create(user_id: @user.id)
 			flash[:notice] = "Your account was created sucessfully."
 			redirect_to "/"
 		else
